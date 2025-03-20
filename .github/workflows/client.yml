@@ -23,8 +23,8 @@ jobs:
 
       - name: Sync S3 Bucket
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_FRONT_Web }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_FRONT_Web }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_FRONT_WEB }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_FRONT_WEB }}
           AWS_EC2_METADATA_DISABLED: true
         run: |
           aws s3 sync build s3://dicetalk-frontend \
