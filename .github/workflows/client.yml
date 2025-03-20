@@ -16,7 +16,7 @@ jobs:
         run: npm install  # 루트에서 실행
 
       - name: Build project
-        run: npm run build  # 루트에서 실행
+        run: npm run build
 
       - name: SHOW AWS CLI VERSION
         run: aws --version
